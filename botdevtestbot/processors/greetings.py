@@ -15,7 +15,7 @@ state_manager.set_default_update_types(update_types.Message)
 def say_hello(bot: TelegramBot, update: Update, state: TelegramState):
     chat_id = update.get_chat().get_id()
     bot.sendMessage(chat_id, 'Hello! and welcome to this bot :)')
-    bot.sendPhoto(chat_id, open('welcome.png', 'rb'), upload=True)
+    bot.sendPhoto(chat_id, open('img/welcome.png', 'rb'), upload=True)
     bot.sendMessage(chat_id, 'Have you signed up yet?', reply_markup=ReplyKeyboardMarkup.a(keyboard=[
         [KeyboardButton.a(text='Yes!'), KeyboardButton.a(text='Do it now!')]
     ]))
