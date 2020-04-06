@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from botdevtestbot import urls as bot_urls
+from hello_world_bot import urls as hello_world_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('botdevtestbot/', include(bot_urls))
+    path('hello_world_bot/', include(hello_world_urls))
 ]
