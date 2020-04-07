@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_tgbot',
-    'hello_world_bot'
+    'hello_world_bot',
+    'reply_markups_bot'
 ]
 
 MIDDLEWARE = [

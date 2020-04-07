@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from hello_world_bot import urls as hello_world_urls
+from reply_markups_bot import urls as reply_markups_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello_world_bot/', include(hello_world_urls))
+    path('hello_world_bot/', include(hello_world_urls)),
+    path('reply_markups_bot/', include(reply_markups_urls))
 ]
